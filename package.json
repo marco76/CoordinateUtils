@@ -1,0 +1,39 @@
+{
+  "name": "@molteni/coordinate-utils",
+  "version": "0.0.3",
+  "description": "Coordinates and Maps functions",
+  "main": "./dist/index.js",
+  "types" : "./dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --compilers ts:ts-node/register,tsx:ts-node/register 'test/**/*.spec.ts'",
+    "watch-test": "mocha -w --compilers ts:ts-node/register,tsx:ts-node/register 'test/**/*.spec.ts'",
+    "compileOnly": "tsc",
+    "prepublish": "tsc -p ./ --outDir dist/"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marco76/CoordinateUtils.git"
+  },
+  "author": {
+    "name": "Marco Molteni",
+    "email": "moltenma@gmail.com",
+    "url": "http://javaee.ch"
+  },
+  "typescript": {
+    "definition": "index.d.ts"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marco76/CoordinateUtils/issues"
+  },
+  "homepage": "https://github.com/marco76/CoordinateUtils#readme",
+  "devDependencies": {
+    "@types/chai": "4.1.2",
+    "@types/mocha": "2.2.48",
+    "chai": "4.1.2",
+    "mocha": "5.0.4",
+    "ts-node": "5.0.1",
+    "typescript": "2.7.2"
+  }
+}
